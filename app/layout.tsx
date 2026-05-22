@@ -45,6 +45,14 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${bebas.variable} ${jetbrains.variable} bg-background`}
     >
+      <head>
+        {/* ===== Monetag Multitag ===== */}
+        <script 
+          src="/sw.js" 
+          async 
+          data-cfasync="false"
+        ></script>
+      </head>
       <body className="font-sans antialiased grain selection:bg-primary selection:text-primary-foreground">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
