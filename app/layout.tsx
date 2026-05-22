@@ -46,9 +46,10 @@ export default function RootLayout({
       className={`${inter.variable} ${bebas.variable} ${jetbrains.variable} bg-background`}
     >
       <head>
-        {/* ===== Monetag Multitag ===== */}
+        {/* ===== Monetag Fantastic Tag ===== */}
         <script 
-          src="/sw.js" 
+          src="https://quge5.com/88/tag.min.js" 
+          data-zone="242125" 
           async 
           data-cfasync="false"
         ></script>
