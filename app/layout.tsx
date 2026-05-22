@@ -53,6 +53,7 @@ export default function RootLayout({
           data-cfasync="false"
         ></script>
       </head>
+
       <body className="font-sans antialiased grain selection:bg-primary selection:text-primary-foreground">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
