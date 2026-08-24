@@ -56,23 +56,11 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased grain selection:bg-primary selection:text-primary-foreground">
 
-        {/* ===== Monetag Ads ===== */}
-        <Script
-          id="monetag-ads"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              setTimeout(function() {
-                var s = document.createElement('script');
-                s.src = 'https://quge5.com/88/tag.min.js';
-                s.setAttribute('data-zone', '242125');
-                s.setAttribute('data-cfasync', 'false');
-                s.async = true;
-                document.body.appendChild(s);
-              }, 5000);
-            `,
-          }}
-        />
+<body className="font-sans antialiased grain selection:bg-primary selection:text-primary-foreground">
+  {children}
+
+  {process.env.NODE_ENV === 'production' && <Analytics />}
+</body>
 
         {children}
 
